@@ -22,7 +22,7 @@ body {
     z-index: -1;
 }
 
-.left-section {
+div.left-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,11 +30,14 @@ body {
     width: 40%;
 }
 
-.right-section {
+div.right-section {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     background-color: #f9fafc;
     height: 100vh;
     left:40%;
+    top:0;
     width: 60%;
 }
 
@@ -70,3 +73,4 @@ footer {
 a {
     color: white;
 }
+
