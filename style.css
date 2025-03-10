@@ -3,12 +3,8 @@
     src: url(assets/Norse-Bold.otf);
 }
 
-* {
-    box-sizing: border-box;
-}
-
-
 body {
+    font-family:Arial, Helvetica, sans-serif;
     margin: 0;
 }
     
@@ -31,14 +27,13 @@ div.left-section {
 }
 
 div.right-section {
-    display: flex;
-    flex-direction: column;
     position: fixed;
     background-color: #f9fafc;
     height: 100vh;
     left:40%;
     top:0;
     width: 60%;
+    overflow: auto;
 }
 
 .logo {
@@ -50,8 +45,6 @@ div.right-section {
     color: #f9fafc;
     height: 18%;
     background-color: rgba(0,0,0, 0.4);
-    
-    
 }
 
 .logo > img {
@@ -74,3 +67,104 @@ a {
     color: white;
 }
 
+p {
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+p.third-paragraph {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.container > p > span {
+    font-style: italic;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 3.5rem;
+    width: clamp(480px, 100%, 600px);
+    padding:0;
+}
+
+
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 12rem 2rem 4rem;
+}
+
+.form-info {
+    padding: 2rem 3rem 2rem 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .1);
+    margin: 0; 
+}
+
+input {
+    appearance: none;
+    outline: none;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.4rem;
+}
+
+input:focus {
+    border: 1px solid #2163e7;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2); 
+}
+
+input:invalid {
+    border: 1px solid rgb(218, 30, 30);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.815);
+    margin-bottom: 2rem;
+}
+
+label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.658);
+}
+
+
+button {
+    color: white;
+    background-color: #596D48;
+    font-weight:bold;
+    font-size: 1rem;
+    border: none;
+    padding: 0.8rem 2.5rem;
+    border-radius: 6px;
+    margin-top:2rem;
+    margin-left:4rem;
+    cursor: pointer;
+}
+
+p.login {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-top:3rem;
+    margin-left:4rem;
+    margin-bottom: 3rem;
+}
+
+span.login {
+    font-weight: 900;
+    color:#596D48;
+    cursor: pointer;
+}
