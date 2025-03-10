@@ -122,7 +122,7 @@ input:focus {
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2); 
 }
 
-input:invalid {
+input:user-invalid {
     border: 1px solid rgb(218, 30, 30);
 }
 
